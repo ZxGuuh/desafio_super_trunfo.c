@@ -19,10 +19,22 @@ int main() {
     // Declaração da carta de Brasília
     struct Carta brasilia;
 
-    brasilia.estado = 'A';  // Estado representado por uma letra
-    strcpy(brasilia.codigo, "A01");  // Código da carta
-    strcpy(brasilia.nome, "Brasilia");  // Nome da cidade
-    brasilia.populacao = 3100000;  // População
-    brasilia.area = 5802.0;        // Área em km²
-    brasilia.pib = 334.0;          // PIB em bilhões de reais
-    brasilia.pontosTuristicos = 50; // Número de pontos turísticos
+    brasilia.estado = 'A';
+    strcpy(brasilia.codigo, "A01");
+    strcpy(brasilia.nome, "Brasilia");
+    brasilia.populacao = 3100000;
+    brasilia.area = 5802.0;
+    brasilia.pib = 334.0;
+    brasilia.pontosTuristicos = 50;
+
+    
+    // Declaração da carta de Fortaleza
+    struct Carta fortaleza;
+
+    fortaleza.estado = 'B';
+    strcpy(fortaleza.codigo, "B01");
+    strcpy(fortaleza.nome, "Fortaleza");
+    fortaleza.populacao = 2700000;
+    fortaleza.area = 314.9;
+    fortaleza.pib = 82.0;
+    fortaleza.pontosTuristicos = 40;
