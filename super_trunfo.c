@@ -38,3 +38,15 @@ int main() {
     fortaleza.area = 314.9;
     fortaleza.pib = 82.0;
     fortaleza.pontosTuristicos = 40;
+
+     // Exibindo informações da carta de Brasília
+    printf("---------------------------------\n");
+    printf("Informações da Carta: Brasília\n");
+    printf("Estado: %c\n", brasilia.estado);
+    printf("Código: %s\n", brasilia.codigo);
+    printf("Nome da Cidade: %s\n", brasilia.nome);
+    printf("População: %d habitantes\n", brasilia.populacao);
+    printf("Área: %.1f km²\n", brasilia.area);
+    printf("PIB: R$ %.1f bilhões\n", brasilia.pib);
+    printf("Número de Pontos Turísticos: %d\n", brasilia.pontosTuristicos);
+    printf("---------------------------------\n");
