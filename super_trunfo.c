@@ -50,3 +50,15 @@ int main() {
     printf("PIB: R$ %.1f bilhões\n", brasilia.pib);
     printf("Número de Pontos Turísticos: %d\n", brasilia.pontosTuristicos);
     printf("---------------------------------\n");
+
+      // Exibindo informações da carta de Fortaleza
+    printf("---------------------------------\n");
+    printf("Informações da Carta: Fortaleza\n");
+    printf("Estado: %c\n", fortaleza.estado);
+    printf("Código: %s\n", fortaleza.codigo);
+    printf("Nome da Cidade: %s\n", fortaleza.nome);
+    printf("População: %d habitantes\n", fortaleza.populacao);
+    printf("Área: %.1f km²\n", fortaleza.area);
+    printf("PIB: R$ %.1f bilhões\n", fortaleza.pib);
+    printf("Número de Pontos Turísticos: %d\n", fortaleza.pontosTuristicos);
+    printf("---------------------------------\n");
