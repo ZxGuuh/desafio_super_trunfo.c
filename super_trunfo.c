@@ -5,13 +5,16 @@ using namespace std;
 
 // Estrutura para armazenar os dados de uma carta
 struct Carta {
-    char estado;              // Letra de A a H
-    char codigo[4];           // Código da carta (ex: A01)
-    char nome[30];           // Nome da cidade
-    int populacao;           // Número de habitantes
-    float area;              // Área em km²
-    float pib;               // Produto Interno Bruto (em bilhões)
-    int pontosTuristicos;    // Número de pontos turísticos
+    char estado;
+    char codigo[4];
+    char nome[30];
+    int populacao;
+    float area;
+    float pib;
+    int pontosTuristicos;
+    float densidade;
+    float pibPerCapita;
+
 };
 
 int main() {
@@ -27,6 +30,10 @@ int main() {
     brasilia.pib = 334.0;
     brasilia.pontosTuristicos = 50;
 
+    // Cálculo da densidade populacional e PIB per capita Brasília
+    carta1.densidade = carta1.populacao / carta1.area;
+    carta1.pibPerCapita = (carta1.pib * 1000000000) / carta1.populacao;
+
     
     // Declaração da carta de Fortaleza
     struct Carta fortaleza;
@@ -39,6 +46,10 @@ int main() {
     fortaleza.pib = 82.0;
     fortaleza.pontosTuristicos = 40;
 
+    // Cálculo da densidade populacional e PIB per capita Fortaleza
+    carta2.densidade = carta2.populacao / carta2.area;
+    carta2.pibPerCapita = (carta2.pib * 1000000000) / carta2.populacao;
+
      // Exibindo informações da carta de Brasília
     printf("---------------------------------\n");
     printf("Informações da Carta: Brasília\n");
@@ -49,6 +60,8 @@ int main() {
     printf("Área: %.1f km²\n", brasilia.area);
     printf("PIB: R$ %.1f bilhões\n", brasilia.pib);
     printf("Número de Pontos Turísticos: %d\n", brasilia.pontosTuristicos);
+    printf("Densidade Populacional: %.2f hab/km²\n", carta1.densidade);
+    printf("PIB per Capita: R$ %.2f\n", carta1.pibPerCapita);
     printf("---------------------------------\n");
 
       // Exibindo informações da carta de Fortaleza
@@ -61,6 +74,8 @@ int main() {
     printf("Área: %.1f km²\n", fortaleza.area);
     printf("PIB: R$ %.1f bilhões\n", fortaleza.pib);
     printf("Número de Pontos Turísticos: %d\n", fortaleza.pontosTuristicos);
+    printf("Densidade Populacional: %.2f hab/km²\n", carta2.densidade);
+    printf("PIB per Capita: R$ %.2f\n", carta2.pibPerCapita);
     printf("---------------------------------\n");
 
       // Comando para pausar o sistema e manter a tela aberta no Windows
