@@ -13,3 +13,16 @@ struct Carta {
     float pib;               // Produto Interno Bruto (em bilhões)
     int pontosTuristicos;    // Número de pontos turísticos
 };
+
+int main() {
+
+    // Declaração da carta de Brasília
+    struct Carta brasilia;
+
+    brasilia.estado = 'A';  // Estado representado por uma letra
+    strcpy(brasilia.codigo, "A01");  // Código da carta
+    strcpy(brasilia.nome, "Brasilia");  // Nome da cidade
+    brasilia.populacao = 3100000;  // População
+    brasilia.area = 5802.0;        // Área em km²
+    brasilia.pib = 334.0;          // PIB em bilhões de reais
+    brasilia.pontosTuristicos = 50; // Número de pontos turísticos
