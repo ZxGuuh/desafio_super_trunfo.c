@@ -62,3 +62,9 @@ int main() {
     printf("PIB: R$ %.1f bilhões\n", fortaleza.pib);
     printf("Número de Pontos Turísticos: %d\n", fortaleza.pontosTuristicos);
     printf("---------------------------------\n");
+
+      // Comando para pausar o sistema e manter a tela aberta no Windows
+    system("pause");
+
+    return 0;
+}
