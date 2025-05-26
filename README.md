@@ -1,1 +1,0 @@
-# desafio_super_trunfo.c
