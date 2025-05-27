@@ -1,7 +1,6 @@
-#include <iostream>
-#include <windows.h>
-
-using namespace std;
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 // Estrutura para armazenar os dados de uma carta
 struct Carta {
@@ -105,7 +104,7 @@ int main() {
     printf("Super Poder: Carta 1 venceu (%d)\n", carta1.superPoder > carta2.superPoder);
 
     printf("=========================================\n");
-    
+
       // Comando para pausar o sistema e manter a tela aberta no Windows
     system("pause");
 
